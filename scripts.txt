@@ -1,0 +1,8 @@
+Scripts for Running the demo:
+python src/predict_3dpose.py --camera_frame --residual --batch_norm --dropout 0.7 --max_norm --evaluateActionWise --epochs 1
+
+Scripts for training the model on clean detection
+python src/predict_3dpose.py --camera_frame --residual --batch_norm --dropout 0.7 --max_norm --evaluateActionWise 
+
+For Visualisation:
+python src/predict_3dpose.py --camera_frame --residual --batch_norm --dropout 0.5 --max_norm --evaluateActionWise --epochs 1 --sample --load "Entermodelcheckpoint"
